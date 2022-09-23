@@ -3,14 +3,13 @@
 
 body {
 	font-family:verdana;
-	margin:30px;
+	margin:60px;
 	background-color: lightgray;
 }
 
 p{
 	background-color:lightgray;
 	font-family:verdana;
-	margin-left:50px;
 	border: thin solid black;
 }
 
@@ -20,8 +19,13 @@ h1{
 	border-color:black;
 	color:hotpink;
 }
-a:link, a:hover{
-	color: hotpink;
+
+a:link{
+	color: white;
+}
+
+a:hover{
+	color:hotpink;
 }
 
 li{
@@ -33,6 +37,7 @@ li a{
 	text-align: center;
 	color:white;
 	padding: 16px;
+	text-decoration: none;
 }
 
 li a:hover{
