@@ -18,5 +18,8 @@ h1{
 	font-family:verdana;
 	border-color:black;
 	color:hotpink;
-
+}
+a:link, a:hover{
+	color: hotpink;
+	display: inline-block;
 }
