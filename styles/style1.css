@@ -1,6 +1,9 @@
 /* CSS Document */
 
-
+* {
+	margin:0;
+	padding:0;
+}
 body {
 	font-family:verdana;
 	background-color: lightgray;
@@ -13,10 +16,12 @@ p{
 }
 
 h1{
-	background-color:lightgray;
-	font-family:verdana;
-	border-color:black;
+	padding-top:60px;
 	color:hotpink;
+}
+
+p{
+	padding-top:32px;
 }
 
 span{
@@ -37,7 +42,7 @@ span{
 	text-decoration: none;
 	text-align: center;
 	color:white;
-	padding: 16px;
+	padding: 12px;
 	font-size:18px;
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
