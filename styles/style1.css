@@ -5,24 +5,16 @@
 	padding:0;
 }
 body {
-	font-family:verdana;
-	background-color: lightgray;
-}
-
-p{
-
-	font-family:verdana;
-
+	font-family:"Open Sans";
+	background-color: white;
+	margin-top:32px;
 }
 
 h1{
-	padding-top:60px;
 	color:hotpink;
 }
 
-p{
-	padding-top:32px;
-}
+
 
 span{
 	color:hotpink;
@@ -49,5 +41,12 @@ span{
 .navbar a:hover{
 	background-color:lightgray;
 	color:hotpink;
-	
+}
+
+a:link {
+	text-decoration:none;
+	color:white;
+}
+a:hover{
+	color:pink;
 }
