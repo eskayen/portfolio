@@ -3,14 +3,13 @@
 
 body {
 	font-family:verdana;
-	margin:60px;
 	background-color: lightgray;
 }
 
 p{
-	background-color:lightgray;
+
 	font-family:verdana;
-	border: thin solid black;
+
 }
 
 h1{
@@ -20,38 +19,30 @@ h1{
 	color:hotpink;
 }
 
-a:link{
-	color: white;
-}
-
-a:hover{
+span{
 	color:hotpink;
+	font-weight:bold;
 }
 
-li{
-	float:right;
+.navbar{
+	background-color:darkgray;
+	overflow:hidden;
+	position:fixed;
+	width:100%;
+	top:0;
 }
-
-li a{
+.navbar a{
+	float:left;
 	display:block;
+	text-decoration: none;
 	text-align: center;
 	color:white;
 	padding: 16px;
-	text-decoration: none;
+	font-size:18px;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
-
-li a:hover{
+.navbar a:hover{
 	background-color:lightgray;
-}
-
-ul {
-	background-color:darkgray;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	list-style-type: none;
-}
-
-.theme-dark{
-					
+	color:hotpink;
+	
 }
