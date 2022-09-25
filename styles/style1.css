@@ -1,28 +1,38 @@
 /* CSS Document */
 
+:root {
+	--primarycolor: white;												/* primary, secondary, and accent colors*/
+	--secondarycolor: darkgray;
+	--accent: hotpink;
+	--text: black;
+}																					
+
 * {
 	margin:0;
 	padding:0;
 }
+
+
+
 body {
 	font-family:"Open Sans";
-	background-color: white;
+	background-color: var(--primarycolor);
 	margin-top:32px;
 }
 
 h1{
-	color:hotpink;
+	color:var(--accent);
 }
 
 
 
 span{
-	color:hotpink;
+	color:var(--accent);
 	font-weight:bold;
 }
 
 .navbar{
-	background-color:darkgray;
+	background-color:var(--secondarycolor);
 	overflow:hidden;
 	position:fixed;
 	width:100%;
@@ -39,14 +49,14 @@ span{
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
 .navbar a:hover{
-	background-color:lightgray;
-	color:hotpink;
+	background-color:var(--primarycolor);
+	color:var(--accent);
 }
 
 a:link {
 	text-decoration:none;
-	color:white;
+	color:var(--primarycolor);
 }
 a:hover{
-	color:pink;
+	color:var(--accent);
 }
