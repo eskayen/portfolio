@@ -2,25 +2,11 @@
 
 var root = document.querySelector(':root');
 
-function colorChangeMidnight(){
-	root.style.setProperty('--primarycolor','#181818');
-	root.style.setProperty('--secondarycolor','#8758FF');								// dark theme
-	root.style.setProperty('--text','#F2F2F2');
-	root.style.setProperty('--accent','#5CB8E4');
-}
-
-function colorChangeDefault(){
-	root.style.setProperty('--primarycolor','white');
-	root.style.setProperty('--secondarycolor','darkgray');								// dark theme
-	root.style.setProperty('--text','black');
-	root.style.setProperty('--accent','hotpink');
-}
-
-function colorChangeBananaPudding(){
-	root.style.setProperty('--primarycolor','#FFF5E4');
-	root.style.setProperty('--secondarycolor','#FFC4C4');								// dark theme
-	root.style.setProperty('--text','#EE6983');
-	root.style.setProperty('--accent','#850E35');
+function colorChange(primary, secondary, text, accent){
+	root.style.setProperty('--primarycolor',primary);
+	root.style.setProperty('--secondarycolor',secondary);								
+	root.style.setProperty('--text',text);
+	root.style.setProperty('--accent',accent);
 }
 
 function dropdownFunction(){
