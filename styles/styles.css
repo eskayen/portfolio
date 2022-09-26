@@ -48,6 +48,7 @@ button{
 	color:green;
 	display:block;
 	text-decoration: none;
+	padding:16px 12px;
 }
 
 body {
@@ -87,7 +88,7 @@ span{
 	color:var(--primarycolor);
 	padding: 12px;
 	font-size:18px;
-	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-family:"Open Sans"";
 }
 .navbar a:hover{
 	background-color:var(--primarycolor);
