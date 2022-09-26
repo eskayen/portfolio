@@ -13,6 +13,19 @@ function dropdownFunction(){
 	document.getElementById("colorlist").classList.toggle("show");						// dropdown function opens list
 }
 
+function obtainColors(){
+	if(localStorage.getItem('--primarycolor')){
+		colorChange(sessionStorage.getItem('--primarycolor'),'black','black','black');
+		console.log("Colors found.");
+	}
+	else{
+		console.log("Colors not found.");
+		colorChange('white','darkgray','black','hotpink');
+	}
+}
+
+obtainColors();
+
 window.onclick = function(event) {
   if (!event.target.matches('.colorButton')) {
     var amount = document.getElementsByClassName("dropdownContent");						// close list if user clicks outside

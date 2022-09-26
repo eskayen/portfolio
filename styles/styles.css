@@ -50,6 +50,7 @@
 	padding:12px;
 	margin:15px;
 	outline-style:solid;
+	outline-width: 2px;
 	cursor:pointer;
 }
 .show{
@@ -90,7 +91,7 @@ span{
 	display:block;
 	text-decoration: none;
 	text-align: center;
-	color:var(--primarycolor);
+	color:var(--text);
 	padding: 12px;
 	font-size:18px;
 	font-family:"Open Sans";
