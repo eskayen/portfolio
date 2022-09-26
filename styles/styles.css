@@ -21,6 +21,35 @@ button{
 	background-color: var(--accent)
 }
 
+.colorButton{
+	background-color:var(--accent);
+	padding:16px;
+	font-size: 16px;
+	color:var(--primarycolor);
+	cursor: pointer;
+	border:none;
+}
+
+.dropdown{
+	position:relative;
+	display:inline-block;
+}
+
+.dropdownContent{
+	display: none;
+	position: absolute;
+	background: var(--secondarycolor);
+	overflow:auto;
+	min-width: 100px;
+	z-index:1;
+}
+
+.dropdownContent a{
+	color:green;
+	display:block;
+	text-decoration: none;
+}
+
 body {
 	font-family:"Open Sans";
 	background-color: var(--primarycolor);
@@ -71,3 +100,5 @@ a:link {
 a:hover{
 	color:var(--accent);
 }
+
+
