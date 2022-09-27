@@ -14,7 +14,7 @@
 
 .colorButton{
 	background-color:var(--primarycolor);
-	outline-style: solid;
+
 	align-self: center;
 	outline-color:var(--accent);
 	margin-bottom: 2px;
@@ -26,8 +26,13 @@
 	color:var(--accent);
 	cursor: pointer;
 	border:none;
+	transition:0.3s;
 }
 
+.colorButton:hover{
+	background-color:var(--accent);
+	color:var(--primarycolor);
+}
 .dropdown{
 	position:relative;
 
@@ -41,20 +46,42 @@
 	min-width: 150px;
 	letter-spacing:6px;
 	z-index:1;
+	animation-name: popupAnimation;
+	animation-duration:2s;
 }
 
 .dropdownContent a{
 	color:var(--text);
-	display:block;
 	text-decoration: none;
 	padding:12px;
 	margin:15px;
-	outline-style:solid;
-	outline-width: 2px;
 	cursor:pointer;
+	display:block;
+	transition:0.3s;
 }
+
+@keyframes popupAnimation{
+	0%{top:150px; opacity:0;}
+	100%{top:0px; opacity:1;}
+}
+
 .show{
 	display:block;
+}
+
+.colorLabel{
+	display: inline-block;
+	width:40px;
+	margin-left:8px;
+	height:20px;
+	outline-style: solid;
+	outline-width: 1px;
+	border-radius: 0px;
+	background-color:var(--labelColor);		
+}
+
+.interestingImage:hover{
+	
 }
 
 body {
@@ -95,6 +122,7 @@ span{
 	padding: 12px;
 	font-size:18px;
 	font-family:"Open Sans";
+	transition:0.5s;
 }
 
 .navbar a:hover{
