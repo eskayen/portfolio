@@ -81,7 +81,7 @@ body {
 }
 h1{
 	color:var(--accent);
-	margin-top:70px;
+	margin-top:80px;
 	transition:0.5s;
 }
 p{
