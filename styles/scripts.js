@@ -3,14 +3,15 @@
 var root = document.querySelector(':root');
 
 function colorChange(primary, secondary, text, accent){
-	root.style.setProperty('--primarycolor',primary);
-	root.style.setProperty('--secondarycolor',secondary);								
-	root.style.setProperty('--text',text);													// change css colors and change localstorage variables
-	root.style.setProperty('--accent',accent);
 	localStorage.setItem('--primarycolor',primary);
 	localStorage.setItem('--secondarycolor',secondary);
 	localStorage.setItem('--text',text);
 	localStorage.setItem('--accent',accent);
+	root.style.setProperty('--primarycolor',primary);
+	root.style.setProperty('--secondarycolor',secondary);								
+	root.style.setProperty('--text',text);													// change css colors and change localstorage variables
+	root.style.setProperty('--accent',accent);
+
 }
 
 function dropdownFunction(){

@@ -1,20 +1,16 @@
 /* CSS Document */
-
 :root {
 	--primarycolor: white;												/* primary, secondary, and accent colors*/
 	--secondarycolor: darkgray;
 	--accent: hotpink;
 	--text: black;
 }																					
-
 * {
 	margin:0;
 	padding:0;
 }
-
 .colorButton{
 	background-color:var(--primarycolor);
-
 	align-self: center;
 	outline-color:var(--accent);
 	margin-bottom: 2px;
@@ -26,18 +22,16 @@
 	color:var(--accent);
 	cursor: pointer;
 	border:none;
-	transition:0.3s;
 }
-
 .colorButton:hover{
 	background-color:var(--accent);
 	color:var(--primarycolor);
+	transition:0.5s;
 }
 .dropdown{
 	position:relative;
 
 }
-
 .dropdownContent{
 	display: none;
 	position: relative;
@@ -48,8 +42,8 @@
 	z-index:1;
 	animation-name: popupAnimation;
 	animation-duration:2s;
+	transition:0.5s;
 }
-
 .dropdownContent a{
 	color:var(--text);
 	text-decoration: none;
@@ -57,18 +51,15 @@
 	margin:15px;
 	cursor:pointer;
 	display:block;
-	transition:0.3s;
+	transition:0.5s;
 }
-
 @keyframes popupAnimation{
 	0%{top:150px; opacity:0;}
 	100%{top:0px; opacity:1;}
 }
-
 .show{
 	display:block;
 }
-
 .colorLabel{
 	display: inline-block;
 	width:40px;
@@ -79,7 +70,6 @@
 	border-radius: 0px;
 	background-color:var(--labelColor);		
 }
-
 .interestingImage:hover{
 	
 }
@@ -89,29 +79,27 @@ body {
 	background-color: var(--primarycolor);
 	margin-top:32px;
 }
-
 h1{
 	color:var(--accent);
-	text-align: center;
+	margin-top:32px;
+	transition:0.5s;
 }
-
 p{
-	text-align:center;
 	margin:30px;
 	color:var(--text);
+	transition:0.5s;
 }
-
 span{
 	color:var(--accent);
 	font-weight:bold;
 }
-
 .navbar{
 	background-color:var(--secondarycolor);
 	overflow:hidden;
 	position:fixed;
 	width:100%;
 	top:0;
+	transition:0.5s;
 }
 .navbar a{
 	float:left;
@@ -124,12 +112,10 @@ span{
 	font-family:"Open Sans";
 	transition:0.5s;
 }
-
 .navbar a:hover{
 	background-color:var(--primarycolor);
 	color:var(--accent);
 }
-
 a:link {
 	text-decoration:none;
 }
