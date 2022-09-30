@@ -90,17 +90,17 @@ h2{
 	transition:0.5s;
 }
 @keyframes popupText{
-	from{top:100px; opacity:0}
+	from{top:200px; opacity:0}
 	to{top:0; opacity:1}
 }
 .aboutText{
+	position:relative;
 	margin:auto;
 	height:450px;
 	line-height: 3.0;
-	width:1200px;
+	width:1300px;
 	animation-name: popupText;
-	animation-duration: 2s;
-	transition:0.3s;
+	animation-duration: 1.3s;
 }
 p{
 	margin:30px;
