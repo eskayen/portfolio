@@ -22,6 +22,7 @@
 	color:var(--accent);
 	cursor: pointer;
 	border:none;
+	transition:0.5s;
 }
 .colorButton:hover{
 	background-color:var(--accent);
@@ -40,8 +41,8 @@
 	min-width: 150px;
 	letter-spacing:6px;
 	z-index:1;
-	animation-name: popupAnimation;
-	animation-duration:2s;
+	animation-name: popupColors;
+	animation-duration:1.5s;
 	transition:0.5s;
 }
 .dropdownContent a{
@@ -53,7 +54,7 @@
 	display:block;
 	transition:0.5s;
 }
-@keyframes popupAnimation{
+@keyframes popupColors{
 	0%{top:150px; opacity:0;}
 	100%{top:0px; opacity:1;}
 }
@@ -70,28 +71,52 @@
 	border-radius: 0px;
 	background-color:var(--labelColor);		
 }
-.interestingImage:hover{
-	
-}
-
-
 body {
-	font-family:"Open Sans";
+
 	background-color: var(--primarycolor);
 }
 h1{
+	font-family:"Open Sans";
+	font-size: 50px;
 	color:var(--accent);
 	margin-top:80px;
 	transition:0.5s;
 }
+h2{
+	font-family:"Open Sans";
+	font-size: 50px;
+	color:var(--accent);
+	margin-top:25px;
+	transition:0.5s;
+}
+@keyframes popupText{
+	from{top:100px; opacity:0}
+	to{top:0; opacity:1}
+}
+.aboutText{
+	margin:auto;
+	height:450px;
+	line-height: 3.0;
+	width:1200px;
+	animation-name: popupText;
+	animation-duration: 2s;
+	transition:0.3s;
+}
 p{
 	margin:30px;
 	color:var(--text);
-	transition:0.5s;
+	transition:0.3s;
 }
-span{
+.stylized {
+	display:inline-block;
 	color:var(--accent);
 	font-weight:bold;
+	transition:0.3s;
+}
+.stylized:hover{
+	transform:translateY(-4px);
+	cursor:pointer;
+	transition:0.3s;
 }
 .navbar{
 	background-color:var(--secondarycolor);
@@ -109,21 +134,20 @@ span{
 	padding: 12px;
 	font-size:18px;
 	font-family:"Open Sans";
-	transition:0.5s;
+	transition:0.2s;
 }
 .navbar a:hover{
 	background-color:var(--primarycolor);
 	color:var(--accent);
+	transform: translateY(5px);
 }
 a:link {
 	text-decoration:none;
+	color:var(--text);
 }
-a:hover{
-	color:var(--accent);
-}
-
 div{
 	font-family:"Open Sans";
 	color:var(--text);
 }
+
 
