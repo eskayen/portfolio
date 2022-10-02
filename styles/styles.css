@@ -21,7 +21,7 @@
 	font-weight:bold;
 	color:var(--accent);
 	cursor: pointer;
-	border:none;
+	border:solid;
 	transition:0.5s;
 }
 .colorButton:hover{
@@ -53,7 +53,14 @@
 	cursor:pointer;
 	display:block;
 	transition:0.5s;
+	margin-left:1000px;
+	margin-right:1000px;
 }
+
+.dropdownContent a:hover{
+	background-color: var(--secondarycolor);
+}
+
 @keyframes popupColors{
 	0%{top:150px; opacity:0;}
 	100%{top:0px; opacity:1;}
@@ -66,9 +73,10 @@
 	width:40px;
 	margin-left:8px;
 	height:20px;
-	outline-style: solid;
-	outline-width: 1px;
-	border-radius: 0px;
+	border-radius: 25px;
+	border:solid;
+	border-width: 1px;
+	border-color: var(--text);
 	background-color:var(--labelColor);		
 }
 body {
@@ -85,6 +93,11 @@ h1{
 	
 }
 
+.frontPage{
+	position:relative;
+	animation-name:popupAnimation;
+	animation-duration:0.75s;
+}
 @keyframes popupAnimation{
 	from{top:50px; opacity:0}
 	to{top:0; opacity:1}
@@ -96,7 +109,7 @@ h1{
 	line-height: 3.0;
 	width:1300px;
 	animation-name: popupAnimation;
-	animation-duration: 1.3s;
+	animation-duration: 0.75s;
 }
 p{
 	margin:30px;
@@ -150,7 +163,7 @@ div{
 	margin-left:300px;
 	margin-right:300px;
 	animation-name:popupAnimation;
-	animation-duration: 1s;
+	animation-duration: 0.75s;
 	position:relative;
 }
 .mediaBox{
