@@ -53,8 +53,6 @@
 	cursor:pointer;
 	display:block;
 	transition:0.5s;
-	margin-left:1000px;
-	margin-right:1000px;
 }
 
 .dropdownContent a:hover{
