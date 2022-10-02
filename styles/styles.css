@@ -36,7 +36,7 @@
 .dropdownContent{
 	display: none;
 	position: relative;
-	background: var(--primarycolor);
+	background-color: var(--primarycolor);
 	overflow:auto;
 	min-width: 150px;
 	letter-spacing:6px;
@@ -81,16 +81,12 @@ h1{
 	color:var(--accent);
 	margin-top:80px;
 	transition:0.5s;
+	text-shadow: 3px 3px 2px var(--secondarycolor);
+	
 }
-h2{
-	font-family:"Open Sans";
-	font-size: 50px;
-	color:var(--accent);
-	margin-top:25px;
-	transition:0.5s;
-}
-@keyframes popupText{
-	from{top:200px; opacity:0}
+
+@keyframes popupAnimation{
+	from{top:50px; opacity:0}
 	to{top:0; opacity:1}
 }
 .aboutText{
@@ -99,7 +95,7 @@ h2{
 	height:450px;
 	line-height: 3.0;
 	width:1300px;
-	animation-name: popupText;
+	animation-name: popupAnimation;
 	animation-duration: 1.3s;
 }
 p{
@@ -150,4 +146,51 @@ div{
 	color:var(--text);
 }
 
+.mediaSpace{
+	margin-left:300px;
+	margin-right:300px;
+	animation-name:popupAnimation;
+	animation-duration: 1s;
+	position:relative;
+}
+.mediaBox{
+	display:inline-block;
+	background-color: var(--primarycolor);
+	box-shadow: 2px 2px 4px black;
+	width:225px;
+	height:300px;
+	margin-top:100px;
+	margin-left:75px;
+	transition:0.2s;
+	border:solid;
+	border-radius: 20px;
+	border-color:var(--secondarycolor);
+	border-width: 3px;
+	text-align: center;
+}
 
+
+.mediaBox:hover{
+	transition: all 0.25s ease;
+	border:solid;
+	cursor:pointer;
+	border-color: var(--accent);
+	border-width: 3px;
+
+}
+.mediaBoxIcon{
+    margin-top: 50px;
+	margin-bottom:50px;
+    position: absolute;
+    transition: 0.25s ease;
+    text-align: center;
+    width: 225px;
+    height: 200px;
+}
+
+
+.mediaBoxIcon:hover{
+	color:var(--accent);
+	transition:0.25s ease;
+	transform:rotate(-15deg);
+}

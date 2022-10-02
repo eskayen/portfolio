@@ -22,13 +22,20 @@ function obtainColors(){
 	if(localStorage.getItem('--primarycolor')){
 		colorChange(localStorage.getItem('--primarycolor'),localStorage.getItem('--secondarycolor'),localStorage.getItem('--text'),localStorage.getItem('--accent'));		
 		//obtain local colors and log
-		console.log("Colors found.");
+		console.log("Colors found. Loading.");
 	}
 	else{
 		console.log("Colors not found.");
 		colorChange('white','darkgray','black','hotpink');					//set to default colors
 	}
 }
+function copyDiscord(){
+	var copiedText = ("MEN4CE#9134");
+	navigator.clipboard.writeText(copiedText);
+	console.log("Copied Discord tag to clipboard.")
+	alert("Copied to clipboard!");
+}
+
 
 obtainColors();
 
