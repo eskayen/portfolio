@@ -96,6 +96,7 @@ h1{
 	animation-name:popupAnimation;
 	animation-duration:0.75s;
 }
+
 @keyframes popupAnimation{
 	from{top:50px; opacity:0}
 	to{top:0; opacity:1}
@@ -119,6 +120,7 @@ p{
 	color:var(--accent);
 	font-weight:bold;
 	transition:0.3s;
+	position:relative;
 }
 .stylized:hover{
 	transform:translateY(-4px);
@@ -132,6 +134,7 @@ p{
 	width:100%;
 	top:0;
 	transition:0.5s;
+	z-index: 2;
 }
 .navbar a{
 	float:left;
@@ -205,3 +208,31 @@ div{
 	transition:0.25s ease;
 	transform:rotate(-15deg);
 }
+
+.nextpageArrow{
+	font-size:64px;
+	transition:0.5s;
+	position:relative;
+	background-color:transparent;
+	margin-top:100px;
+	margin-left:2000px;
+	border: none;
+}
+
+.nextpageArrow:hover{
+	cursor:pointer;
+	transform: translateX(20px);
+	transition:0.5s;
+
+}
+
+.nextpageArrow a{
+	color: var(--text);
+	transition:0.3s;
+}
+
+.nextpageArrow a:hover{
+	color:var(--accent);
+	transition:0.3s;
+}
+
