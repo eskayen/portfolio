@@ -101,15 +101,7 @@ h1{
 	from{top:50px; opacity:0}
 	to{top:0; opacity:1}
 }
-.aboutText{
-	position:relative;
-	margin:auto;
-	height:450px;
-	line-height: 3.0;
-	width:1300px;
-	animation-name: popupAnimation;
-	animation-duration: 0.75s;
-}
+
 p{
 	margin:30px;
 	color:var(--text);
@@ -210,12 +202,13 @@ div{
 }
 
 .nextpageArrow{
+	display: block;
 	font-size:64px;
 	transition:0.5s;
 	position:relative;
 	background-color:transparent;
-	margin-top:100px;
-	margin-left:2000px;
+	margin-top:20px;
+	margin-bottom:20px;
 	border: none;
 }
 
@@ -234,5 +227,68 @@ div{
 .nextpageArrow a:hover{
 	color:var(--accent);
 	transition:0.3s;
+}
+
+.aboutText{
+	position:relative;
+	margin:auto;
+	height:450px;
+	line-height: 3.0;
+	width:1600px;
+	animation-name: popupAnimation;
+	animation-duration: 0.75s;
+}
+.aboutText h1{
+	font-size: 100px;
+}
+
+.aboutText p{
+	font-size:16px;
+	padding-bottom: 450px;
+}
+
+
+@keyframes popfromLeftAnimation{
+	from{left:150px; opacity:0}
+	to{left:0; opacity:1}
+}
+
+@keyframes popfromRightAnimation{
+	from{right:50px; opacity:0}
+	to{right:0; opacity:1}
+}
+
+.aboutBlock{
+
+	padding:100px;
+	margin-top:300px;
+	position:relative;
+	animation-name: popfromLeftAnimation;
+	animation-duration:3s;
+	margin:auto;
+}
+
+
+.aboutBlock section{
+	letter-spacing: 2px;
+	width:75%;
+	font-size: 20px;
+	padding-right:32px;
+	font-family:"Open Sans";
+}
+
+.aboutBlock h1{
+	font-size: 64px;
+}
+
+.aboutBlock img{
+	box-shadow: -10px -10px 0px 6px var(--accent), 10px 10px 0px 6px var(--secondarycolor);
+	transition:0.3s;
+}
+
+.aboutBlock img:hover{
+	box-shadow: -10px -10px 0px 6px var(--secondarycolor), 10px 10px 0px 6px var(--accent);
+	transition:0.3s;
+	cursor:pointer;
 }
 
