@@ -98,7 +98,7 @@ h1{
 }
 
 @keyframes popupAnimation{
-	from{top:50px; opacity:0}
+	from{top:64px; opacity:0}
 	to{top:0; opacity:1}
 }
 
@@ -236,7 +236,7 @@ div{
 	line-height: 3.0;
 	width:1600px;
 	animation-name: popupAnimation;
-	animation-duration: 0.75s;
+	animation-duration: 0.5s;
 }
 .aboutText h1{
 	font-size: 100px;
@@ -244,7 +244,7 @@ div{
 
 .aboutText p{
 	font-size:16px;
-	padding-bottom: 450px;
+	padding-bottom: 50px;
 }
 
 
@@ -258,37 +258,20 @@ div{
 	to{right:0; opacity:1}
 }
 
-.aboutBlock{
-
-	padding:100px;
-	margin-top:300px;
-	position:relative;
-	animation-name: popfromLeftAnimation;
-	animation-duration:3s;
-	margin:auto;
-}
-
-
-.aboutBlock section{
-	letter-spacing: 2px;
-	width:75%;
-	font-size: 20px;
-	padding-right:32px;
-	font-family:"Open Sans";
-}
-
-.aboutBlock h1{
-	font-size: 64px;
-}
-
-.aboutBlock img{
-	box-shadow: -10px -10px 0px 6px var(--accent), 10px 10px 0px 6px var(--secondarycolor);
-	transition:0.3s;
-}
-
-.aboutBlock img:hover{
-	box-shadow: -10px -10px 0px 6px var(--secondarycolor), 10px 10px 0px 6px var(--accent);
-	transition:0.3s;
+.downloadButton{
+	font-size:24px;
+	font-weight:64px;
+	border: 2px solid;
+	border-radius:2em;
+	color:mediumpurple;
+	padding:0px 24px 0px 24px;
 	cursor:pointer;
+	transition:0.5s;
+	position:relative;
+}
+
+.downloadButton:hover{
+	transition:0.5s;
+	color:var(--accent);
 }
 
