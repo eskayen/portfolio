@@ -259,19 +259,18 @@ div{
 }
 
 .downloadButton{
-	font-size:24px;
+	font-size:36px;
 	font-weight:64px;
-	border: 2px solid;
-	border-radius:2em;
-	color:mediumpurple;
 	padding:0px 24px 0px 24px;
 	cursor:pointer;
 	transition:0.5s;
 	position:relative;
 }
 
-.downloadButton:hover{
-	transition:0.5s;
-	color:var(--accent);
+
+.downloadButton a:hover{
+	transition:0.25s;
+	color:lightgreen;
+	border-color: lightgreen;
 }
 
