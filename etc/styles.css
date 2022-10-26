@@ -42,17 +42,18 @@
 	letter-spacing:6px;
 	z-index:1;
 	animation-name: popupColors;
-	animation-duration:1.5s;
+	animation-duration:0.5s;
 	transition:0.5s;
 }
 .dropdownContent a{
 	color:var(--text);
 	text-decoration: none;
+	width:400px;
 	padding:12px;
 	margin:15px;
 	cursor:pointer;
 	display:block;
-	transition:0.5s;
+	transition:0.25s;
 }
 
 .dropdownContent a:hover{
@@ -93,8 +94,7 @@ h1{
 
 .frontPage{
 	position:relative;
-	animation-name:popupAnimation;
-	animation-duration:0.75s;
+	top:50%;
 }
 
 @keyframes popupAnimation{
@@ -272,5 +272,23 @@ div{
 	transition:0.25s;
 	color:lightgreen;
 	border-color: lightgreen;
+}
+
+.experiencePage{
+	animation-name: popupAnimation;
+	animation-duration: 0.75s;
+	position:relative;
+}
+
+.projectBlock{
+	color: var(--secondarycolor);
+	height:400px;
+	width:1000px;
+	padding:auto;
+	margin:auto;
+	margin-bottom:100px;
+	border-style: solid;
+	box-shadow: 4px 4px 0 0 black;
+	border-radius: 32px;
 }
 
