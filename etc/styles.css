@@ -258,19 +258,21 @@ div{
 	to{right:0; opacity:1}
 }
 
-.downloadButton{
+.resumeButton{
 	font-size:36px;
-	font-weight:64px;
 	padding:0px 24px 0px 24px;
 	cursor:pointer;
-	transition:0.5s;
+	transition:0.25s;
 	position:relative;
+	color:var(--secondarycolor);
+	height: 32px;
+	width:32px;
 }
 
 
-.downloadButton a:hover{
+.resumeButton a:hover{
 	transition:0.25s;
-	color:lightgreen;
+	color:var(--accent);
 	border-color: lightgreen;
 }
 
@@ -288,7 +290,7 @@ div{
 	margin:auto;
 	margin-bottom:100px;
 	border-style: solid;
-	box-shadow: 4px 4px 0 0 black;
-	border-radius: 32px;
+	border-width: 4px;
+	box-shadow: 8px 8px 0 0 var(--secondarycolor);
 }
 
