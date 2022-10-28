@@ -95,6 +95,8 @@ h1{
 .frontPage{
 	position:relative;
 	top:50%;
+	animation-name: popupAnimation;
+	animation-duration: 0.5s;;
 }
 
 @keyframes popupAnimation{
