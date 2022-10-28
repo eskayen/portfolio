@@ -259,14 +259,12 @@ div{
 }
 
 .resumeButton a{
-	font-size:36px;
+	font-size:100px;
 	padding:0px 24px 0px 24px;
 	cursor:pointer;
 	transition:0.25s;
 	position:relative;
 	color:var(--secondarycolor);
-	height:32px;
-	width:32px;
 }
 .resumeButton a:hover{
 	transition:0.25s;
@@ -289,7 +287,7 @@ div{
 	border-width:2px;
 	border-radius:16px;
 	border-color:var(--var);
-	box-shadow: 8px 8px 16px 1px var(--secondarycolor);
+	box-shadow: 0px 0px 16px 1px var(--secondarycolor);
 	transition:0.25s;
 }
 .projectBlockImages{
@@ -339,7 +337,6 @@ h2{
 	margin:32px;
 	border-radius:16px;
 	border-color: var(--secondarycolor);
-	box-shadow: 8px 8px 0px 0px var(--accent);
 }
 
 
