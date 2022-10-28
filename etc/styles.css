@@ -258,14 +258,14 @@ div{
 	to{right:0; opacity:1}
 }
 
-.resumeButton{
+.resumeButton a{
 	font-size:36px;
 	padding:0px 24px 0px 24px;
 	cursor:pointer;
 	transition:0.25s;
 	position:relative;
 	color:var(--secondarycolor);
-	height: 32px;
+	height:32px;
 	width:32px;
 }
 
@@ -283,14 +283,73 @@ div{
 }
 
 .projectBlock{
-	color: var(--secondarycolor);
-	height:400px;
-	width:1000px;
+	color:transparent;
+	height:36em;
+	display:block;
+	width:75em;
 	padding:auto;
 	margin:auto;
 	margin-bottom:100px;
-	border-style: solid;
-	border-width: 4px;
-	box-shadow: 8px 8px 0 0 var(--secondarycolor);
+	border-width:2px;
+	border-radius:16px;
+	border-color:var(--var);
+	box-shadow: 8px 8px 16px 1px var(--secondarycolor);
+	transition:0.25s;
 }
 
+.projectBlock p{
+	font-size:24px;
+	text-align:center;
+}
+
+
+.projectBlockColumn{
+	float:left;
+	width:40%;
+	height:100%;
+}
+
+h2{
+	text-align:center;
+	font-family:"Open Sans";
+	font-size: 32px;
+	color:var(--accent);
+	transition:0.5s;
+	text-shadow: 3px 3px 2px var(--secondarycolor);
+}
+.languageList{
+	display:inline-block;
+	line-height: 4em;
+	padding-left:4em;
+	border-width:1px;
+	border-style: solid;
+	width:100%;
+}
+.labelTag{
+	border-radius: 1em;
+	border-style: solid;
+	border-width:1px;
+	display: inline;
+	padding:0.1em 0.5em;
+	margin:auto;
+	width:1em;
+	height:1em;
+	font-size:1em;
+	font-weight:bolder;
+}
+.projectBlockImages img{
+	position:absolute;
+	display:inline;
+	border-radius:4px;
+	border-color: var(--secondarycolor);
+	box-shadow: 12px 12px 0px 0px var(--accent);
+}
+
+.projectBlockImages{
+	border-style: solid;
+	border-width:1px;
+	display:inline-block;
+	margin:auto;
+	padding:auto;
+	flex:right;
+}
