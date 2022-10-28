@@ -268,20 +268,16 @@ div{
 	height:32px;
 	width:32px;
 }
-
-
 .resumeButton a:hover{
 	transition:0.25s;
 	color:var(--accent);
 	border-color: lightgreen;
 }
-
 .experiencePage{
 	animation-name: popupAnimation;
 	animation-duration: 0.75s;
 	position:relative;
 }
-
 .projectBlock{
 	color:transparent;
 	height:36em;
@@ -296,20 +292,24 @@ div{
 	box-shadow: 8px 8px 16px 1px var(--secondarycolor);
 	transition:0.25s;
 }
-
+.projectBlockImages{
+	float:right;
+	width:60%;
+	height:100%;
+	text-align: center;
+}
 .projectBlock p{
-	font-size:24px;
+	font-size:16px;
 	text-align:center;
 }
-
-
 .projectBlockColumn{
 	float:left;
 	width:40%;
 	height:100%;
+	line-height: 32px;
 }
-
 h2{
+	margin-top:16px;
 	text-align:center;
 	font-family:"Open Sans";
 	font-size: 32px;
@@ -319,11 +319,9 @@ h2{
 }
 .languageList{
 	display:inline-block;
-	line-height: 4em;
 	padding-left:4em;
-	border-width:1px;
-	border-style: solid;
 	width:100%;
+	margin-left:4em;
 }
 .labelTag{
 	border-radius: 1em;
@@ -338,18 +336,10 @@ h2{
 	font-weight:bolder;
 }
 .projectBlockImages img{
-	position:absolute;
-	display:inline;
-	border-radius:4px;
+	margin:32px;
+	border-radius:16px;
 	border-color: var(--secondarycolor);
-	box-shadow: 12px 12px 0px 0px var(--accent);
+	box-shadow: 8px 8px 0px 0px var(--accent);
 }
 
-.projectBlockImages{
-	border-style: solid;
-	border-width:1px;
-	display:inline-block;
-	margin:auto;
-	padding:auto;
-	flex:right;
-}
+
