@@ -2,7 +2,7 @@
 :root {
 	--primarycolor: white;												/* primary, secondary, and accent colors*/
 	--secondarycolor: darkgray;
-	--accent: hotpink;
+	--accent: darkred;
 	--text: black;
 }																					
 * {
@@ -17,7 +17,7 @@
 	padding:20px;
 	font-size: 20px;
 	letter-spacing: 8px;
-	font-family:"Open Sans";
+	font-family:sans-serif;
 	font-weight:bold;
 	color:var(--accent);
 	cursor: pointer;
@@ -31,7 +31,6 @@
 }
 .dropdown{
 	position:relative;
-
 }
 .dropdownContent{
 	display: none;
@@ -78,23 +77,31 @@
 	border-color: var(--text);
 	background-color:var(--labelColor);		
 }
-body {
 
+body {
 	background-color: var(--primarycolor);
 }
+
 h1{
-	font-family:"Open Sans";
+	font-family:sans-serif;
 	font-size: 50px;
 	color:var(--accent);
 	margin-top:80px;
 	transition:0.5s;
+}
+
+h2{
+	margin-top:16px;
+	text-align:center;
+	font-family:sans-serif;
+	font-size: 32px;
+	color:var(--accent);
+	transition:0.5s;
 	text-shadow: 3px 3px 2px var(--secondarycolor);
-	
 }
 
 .frontPage{
 	position:relative;
-	top:50%;
 	animation-name: popupAnimation;
 	animation-duration: 0.5s;;
 }
@@ -137,70 +144,21 @@ p{
 	color:var(--text);
 	padding: 12px;
 	font-size:18px;
-	font-family:"Open Sans";
+	font-family:sans-serif;
 	transition:0.2s;
 }
 .navbar a:hover{
 	background-color:var(--primarycolor);
 	color:var(--accent);
-	transform: translateY(5px);
 }
+
 a:link {
 	text-decoration:none;
 	color:var(--text);
 }
 div{
-	font-family:"Open Sans";
+	font-family:sans-serif;
 	color:var(--text);
-}
-
-.mediaSpace{
-	margin-left:300px;
-	margin-right:300px;
-	animation-name:popupAnimation;
-	animation-duration: 0.75s;
-	position:relative;
-}
-.mediaBox{
-	display:inline-block;
-	background-color: var(--primarycolor);
-	box-shadow: 2px 2px 4px black;
-	width:225px;
-	height:300px;
-	margin-top:100px;
-	margin-left:75px;
-	transition:0.2s;
-	border:solid;
-	border-radius: 20px;
-	border-color:var(--secondarycolor);
-	border-width: 3px;
-	text-align: center;
-}
-
-
-.mediaBox:hover{
-	transition: all 0.25s ease;
-	border:solid;
-	cursor:pointer;
-	border-color: var(--accent);
-	border-width: 3px;
-
-}
-.mediaBoxIcon{
-    margin-top: 50px;
-	margin-bottom:50px;
-    position: absolute;
-    transition: 0.25s ease;
-    text-align: center;
-    width: 225px;
-    height: 200px;
-}
-
-
-.mediaBoxIcon:hover{
-	color:var(--accent);
-	transition:0.25s ease;
-	transform:rotate(-15deg);
 }
 
 .nextpageArrow{
@@ -231,24 +189,6 @@ div{
 	transition:0.3s;
 }
 
-.aboutText{
-	position:relative;
-	margin:auto;
-	height:450px;
-	line-height: 3.0;
-	width:1600px;
-	animation-name: popupAnimation;
-	animation-duration: 0.5s;
-}
-.aboutText h1{
-	font-size: 100px;
-}
-
-.aboutText p{
-	font-size:16px;
-	padding-bottom: 50px;
-}
-
 
 @keyframes popfromLeftAnimation{
 	from{left:150px; opacity:0}
@@ -260,63 +200,6 @@ div{
 	to{right:0; opacity:1}
 }
 
-.resumeButton a{
-	font-size:100px;
-	padding:0px 24px 0px 24px;
-	cursor:pointer;
-	transition:0.25s;
-	position:relative;
-	color:var(--secondarycolor);
-}
-.resumeButton a:hover{
-	transition:0.25s;
-	color:var(--accent);
-	border-color: lightgreen;
-}
-.experiencePage{
-	animation-name: popupAnimation;
-	animation-duration: 0.75s;
-	position:relative;
-}
-.projectBlock{
-	color:transparent;
-	height:36em;
-	display:block;
-	width:75em;
-	padding:auto;
-	margin:auto;
-	margin-bottom:100px;
-	border-width:2px;
-	border-radius:16px;
-	background-color: var(--primarycolor);
-	box-shadow: 3px 3px 4px black;
-	transition:0.25s;
-}
-.projectBlockImages{
-	float:right;
-	width:60%;
-	height:100%;
-	text-align: center;
-}
-.projectBlock p{
-	font-size:16px;
-	text-align:center;
-}
-.projectBlockColumn{
-	float:left;
-	width:40%;
-	height:100%;
-	line-height: 32px;
-}
-h2{
-	margin-top:16px;
-	text-align:center;
-	font-family:"Open Sans";
-	font-size: 32px;
-	color:var(--accent);
-	transition:0.5s;
-	text-shadow: 3px 3px 2px var(--secondarycolor);
-}
 .languageList{
 	display:inline-block;
 	padding-left:4em;
@@ -335,10 +218,6 @@ h2{
 	font-size:1em;
 	font-weight:bolder;
 }
-.projectBlockImages img{
-	margin:32px;
-	border-radius:16px;
-	border-color: var(--secondarycolor);
-}
+
 
 

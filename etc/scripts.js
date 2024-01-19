@@ -11,7 +11,6 @@ function colorChange(primary, secondary, text, accent){
 	root.style.setProperty('--secondarycolor',secondary);								
 	root.style.setProperty('--text',text);													// change css colors and change localstorage variables
 	root.style.setProperty('--accent',accent);
-
 }
 
 function dropdownFunction(){
@@ -26,9 +25,10 @@ function obtainColors(){
 	}
 	else{
 		console.log("Colors not found.");
-		colorChange('white','darkgray','black','hotpink');					//set to default colors
+		colorChange('white','darkgray','black','darkred');					//set to default colors
 	}
 }
+
 function copyDiscord(){
 	var copiedText = ("MEN4CE#9134");
 	navigator.clipboard.writeText(copiedText);
