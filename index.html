@@ -1,83 +1,146 @@
-<!doctype html>
-<html lang = "en">
-	
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <link rel="stylesheet" href="etc/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- favicon and stylesheet -->
+    <link rel="icon" type="image/x-icon" href="pictures/favicon.png" />
+    <script src="etc/scripts.js"></script>
+    <!-- title -->
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- navigation panel -->
+    <div class="navbar">
+      <a href="../portfolio/" title="Home"
+        >home <i class="bi bi-house-fill"></i
+      ></a>
+      <a href="https://github.com/eskayen/portfolio" title="Link to GitHub"
+        >github repository <i class="bi bi-github"></i
+      ></a>
+      <img
+        src="pictures/greenmoonicon.png"
+        width="45px"
+        align="right"
+        alt="cool moon icon"
+        class="interestingImage"
+      />
+      <!--https://icons8.com/icons/set/moon-->
+    </div>
+    <div class="frontPage">
+      <!--heading-->
+      <center><h1>Saad - Computer Science Student</h1></center>
+      <div>
+        <!--opening-->
+        <center>
+          <p>
+            This text is
+            <a href="about.html"><span class="stylized"> stylized </span></a>
+            signaling key information or of importance. Click on them. Feel free
+            to choose a theme to your liking or comfortable to your eyes.
+          </p>
+        </center>
+      </div>
 
-<head><meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="etc/styles.css">								
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">													<!-- favicon and stylesheet -->
-	<link rel="icon" type="image/x-icon" href="pictures/favicon.png">
-	<script src="etc/scripts.js"></script>
-																																												<!-- title -->
-	<title>Home</title>
-</head>
-<body>
-	<!-- navigation panel -->
-	<div class = "navbar">
-		<a href="../portfolio/" title="Home">home  <i class="bi bi-house-fill"></i></a>
-		<a href="https://github.com/eskayen/portfolio" title="Link to GitHub">github repository  <i class="bi bi-github"></i></a>
-		<img src="pictures/greenmoonicon.png" width="45px" align="right" alt="cool moon icon" class="interestingImage">		<!--https://icons8.com/icons/set/moon-->
-	</div>
-<div class="frontPage">
-	<!--heading-->
-	<center><h1>Saad - Computer Science Student</h1></center>																								
-		<div>
-			<!--opening-->
-		<center><p> This text is <a href="about.html"><span class="stylized"> stylized </span></a> signaling key information or of 
-			importance. Click on them. Feel free to choose a theme to your liking or comfortable to your eyes.</p></center>
-		</div>
-	
-	<!--nextpagebutton-->
-	<center><div><button class="nextpageArrow"><a href="about.html" title="Click to go to the next page."><i class="bi bi-arrow-right"></i></a></button></div></center>
-	
-	
-<!--button and function call-->
-<!-- themes -->
-<div class = "dropdown" align="center"><button onclick="dropdownFunction()" class="colorButton">Choose a theme</button>
-		<div id="colorlist" class = "dropdownContent">
-		<a onClick="colorChange('white','darkgray','black','darkred')">Default	<div class="colorLabel" style="--labelColor: white"></div><div class="colorLabel" style="--labelColor: darkgray"></div><div class="colorLabel" style="--labelColor:black"></div><div class="colorLabel" style="--labelColor: darkred"></div></a>
-			
-		<a onClick="colorChange('#181818','#8758FF','#F2F2F2','#5CB8E4')">Midnight<div class="colorLabel" style="--labelColor: #181818"></div><div class="colorLabel" style="--labelColor: #8758FF"></div><div class="colorLabel" style="--labelColor:#F2F2F2"></div><div class="colorLabel" style="--labelColor: #5CB8E4"></div></a>
-			
-		<a onClick="colorChange('#FFF5E4','#FFC4C4','#EE6983','#850E35')">Raspberry<div class="colorLabel" style="--labelColor: #FFF5E4"></div><div class="colorLabel" style="--labelColor: #FFC4C4"></div><div class="colorLabel" style="--labelColor:#EE6983"></div><div class="colorLabel" style="--labelColor: #850E35"></div></a>
-			
-		<a onClick="colorChange('#2B4865','#002B5B','#37a1c8','#8FE3CF')">Aquamarine<div class="colorLabel" style="--labelColor: 
-			#2B4865"></div><div class="colorLabel" style="--labelColor: 
-			#002B5B"></div><div class="colorLabel" style="--labelColor:
-			#37a1c8"></div><div class="colorLabel" style="--labelColor: 
-			#8FE3CF"></div></a>
-			
-		<a onClick="colorChange('#181818','#711A75','#F10086','#F582A7')">Miami Night<div class="colorLabel" style="--labelColor: 
-			#181818"></div><div class="colorLabel" style="--labelColor: 
-			#711A75"></div><div class="colorLabel" style="--labelColor:
-			#F10086"></div><div class="colorLabel" style="--labelColor: 
-			#F582A7"></div></a>
-			
-		<a onClick="colorChange('#232931','#393E46','#EEEEEE','#4ECCA3')">Mint<div class="colorLabel" style="--labelColor: 
-			#232931"></div><div class="colorLabel" style="--labelColor: 
-			#393E46"></div><div class="colorLabel" style="--labelColor:
-			#EEEEEE"></div><div class="colorLabel" style="--labelColor: 
-			#4ECCA3"></div></a>
-			
-		<a onClick="colorChange('#F8EDE3','#DFD3C3','#be9d87','#7D6E83')">Wafer<div class="colorLabel" style="--labelColor: 
-			#F8EDE3"></div><div class="colorLabel" style="--labelColor: 
-			#DFD3C3"></div><div class="colorLabel" style="--labelColor:
-			#be9d87"></div><div class="colorLabel" style="--labelColor: 
-			#7D6E83"></div></a>																																						
-			
-		<a onClick="colorChange('#251B37','#372948','#FFCACA','#FFECEF')">Lavender<div class="colorLabel" style="--labelColor: 
-			#251B37"></div><div class="colorLabel" style="--labelColor: 
-			#372948"></div><div class="colorLabel" style="--labelColor:
-			#FFCACA"></div><div class="colorLabel" style="--labelColor: 
-			#FFECEF"></div></a>		
-			
-		<a onClick="colorChange('#26191B','#584153','#AF8BAF','#F6ACC8')">Grape<div class="colorLabel" style="--labelColor: 
-			#26191B"></div><div class="colorLabel" style="--labelColor: 
-			#584153"></div><div class="colorLabel" style="--labelColor:
-			#AF8BAF"></div><div class="colorLabel" style="--labelColor: 
-			#F6ACC8"></div></a>	
-		</div>
-	</div>
-</div>
-</body>
+      <!--nextpagebutton-->
+      <center>
+        <div>
+          <button class="nextpageArrow">
+            <a href="about.html" title="Click to go to the next page."
+              ><i class="bi bi-arrow-right"></i
+            ></a>
+          </button>
+        </div>
+      </center>
+
+      <!--button and function call-->
+      <!-- themes -->
+      <div class="dropdown" align="center">
+        <button onclick="dropdownFunction()" class="colorButton">
+          Choose a theme
+        </button>
+        <div id="colorlist" class="dropdownContent">
+          <a onClick="colorChange('white','darkgray','black','darkred')"
+            >Default
+            <div class="colorLabel" style="--labelColor: white"></div>
+            <div class="colorLabel" style="--labelColor: darkgray"></div>
+            <div class="colorLabel" style="--labelColor: black"></div>
+            <div class="colorLabel" style="--labelColor: darkred"></div
+          ></a>
+
+          <a onClick="colorChange('#181818','#8758FF','#F2F2F2','#5CB8E4')"
+            >Midnight
+            <div class="colorLabel" style="--labelColor: #181818"></div>
+            <div class="colorLabel" style="--labelColor: #8758ff"></div>
+            <div class="colorLabel" style="--labelColor: #f2f2f2"></div>
+            <div class="colorLabel" style="--labelColor: #5cb8e4"></div
+          ></a>
+
+          <a onClick="colorChange('#FFF5E4','#FFC4C4','#EE6983','#850E35')"
+            >Raspberry
+            <div class="colorLabel" style="--labelColor: #fff5e4"></div>
+            <div class="colorLabel" style="--labelColor: #ffc4c4"></div>
+            <div class="colorLabel" style="--labelColor: #ee6983"></div>
+            <div class="colorLabel" style="--labelColor: #850e35"></div
+          ></a>
+
+          <a onClick="colorChange('#2B4865','#002B5B','#37a1c8','#8FE3CF')"
+            >Aquamarine
+            <div class="colorLabel" style="--labelColor: #2b4865"></div>
+            <div class="colorLabel" style="--labelColor: #002b5b"></div>
+            <div class="colorLabel" style="--labelColor: #37a1c8"></div>
+            <div class="colorLabel" style="--labelColor: #8fe3cf"></div
+          ></a>
+
+          <a onClick="colorChange('#181818','#711A75','#F10086','#F582A7')"
+            >Miami Night
+            <div class="colorLabel" style="--labelColor: #181818"></div>
+            <div class="colorLabel" style="--labelColor: #711a75"></div>
+            <div class="colorLabel" style="--labelColor: #f10086"></div>
+            <div class="colorLabel" style="--labelColor: #f582a7"></div
+          ></a>
+
+          <a onClick="colorChange('#232931','#393E46','#EEEEEE','#4ECCA3')"
+            >Mint
+            <div class="colorLabel" style="--labelColor: #232931"></div>
+            <div class="colorLabel" style="--labelColor: #393e46"></div>
+            <div class="colorLabel" style="--labelColor: #eeeeee"></div>
+            <div class="colorLabel" style="--labelColor: #4ecca3"></div
+          ></a>
+
+          <a onClick="colorChange('#F8EDE3','#DFD3C3','#be9d87','#7D6E83')"
+            >Wafer
+            <div class="colorLabel" style="--labelColor: #f8ede3"></div>
+            <div class="colorLabel" style="--labelColor: #dfd3c3"></div>
+            <div class="colorLabel" style="--labelColor: #be9d87"></div>
+            <div class="colorLabel" style="--labelColor: #7d6e83"></div
+          ></a>
+
+          <a onClick="colorChange('#251B37','#372948','#FFCACA','#FFECEF')"
+            >Lavender
+            <div class="colorLabel" style="--labelColor: #251b37"></div>
+            <div class="colorLabel" style="--labelColor: #372948"></div>
+            <div class="colorLabel" style="--labelColor: #ffcaca"></div>
+            <div class="colorLabel" style="--labelColor: #ffecef"></div
+          ></a>
+
+          <a onClick="colorChange('#26191B','#584153','#AF8BAF','#F6ACC8')"
+            >Grape
+            <div class="colorLabel" style="--labelColor: #26191b"></div>
+            <div class="colorLabel" style="--labelColor: #584153"></div>
+            <div class="colorLabel" style="--labelColor: #af8baf"></div>
+            <div class="colorLabel" style="--labelColor: #f6acc8"></div
+          ></a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
