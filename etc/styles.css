@@ -6,12 +6,34 @@
   --text: black;
 }
 
+#nav {
+  background-color: var(--secondary-color);
+}
+.nav-item {
+  font-size: larger;
+  transition: 0.25s;
+  background-color: var(--secondary-color);
+}
+
+
+
+.nav-item:hover {
+  transition: 0.25s;
+  background-color: var(--primary-color);
+}
+
 .nav-link {
+  color: var(--text);
+}
+
+.nav-link:hover {
+  transition: 0.3s;
   color: var(--accent);
 }
 
 .display-4 {
   color: var(--accent);
+  font-weight: bold;
 }
 
 .btn-light {
@@ -21,6 +43,7 @@
   padding: 20px;
   font-size: 20px;
   font-weight: bold;
+  letter-spacing: 10px;
   color: var(--accent);
   cursor: pointer;
   border: solid;
@@ -39,4 +62,24 @@
 
 .bg-light {
   background-color: var(--secondary-color);
+}
+
+.gmu-text {
+  letter-spacing: 5px;
+}
+
+.lead {
+  font-family: sans-serif;
+}
+
+.important {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.important:hover {
+  color: var(--accent);
+  font-weight: bold;
+  cursor: pointer;
 }
