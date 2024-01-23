@@ -35,7 +35,8 @@
   font-weight: bold;
 }
 
-.btn-light {
+
+.colorButton{
   color: var(--accent);
   outline-color: var(--accent);
   margin-bottom: 2px;
@@ -50,12 +51,13 @@
   font-family: sans-serif;
   border-radius: 0px;
   border-color: var(--accent);
+  transition: 0.3s;
 }
 
 .btn-light:hover {
   background-color: var(--accent);
   color: var(--primary-color);
-  transition: 0.25s;
+  transition: 0.3s;
   border-color: var(--accent);
 }
 
@@ -97,4 +99,21 @@
 
 .courses li {
   padding-top: 24px;
+}
+
+.color-text {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.colorLabel{
+	display: inline-block;
+	width:40px;
+	margin-left:8px;
+	height:20px;
+	border-radius: 25px;
+	border:solid;
+	border-width: 1px;
+	border-color: var(--text);
+	background-color:var(--labelColor);		
 }

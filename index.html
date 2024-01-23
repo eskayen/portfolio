@@ -34,8 +34,11 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script>
+      src = "etc/scripts.js";
+    </script>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 sticky-top">
       <div class="container-fluid p-0">
         <button
           class="navbar-toggler"
@@ -82,12 +85,35 @@
           >
         </p>
       </div>
+
       <div class="container-lg pt-6">
         <div class="text-center">
-          <div style="background-color: darkgray; height: 600px" class="pt-5">
-            <button type="button" class="btn btn-light btn-lg btn-block">
+          <div style="background-color: darkgray; height: 1000px" class="pt-5">
+            <button
+              type="button"
+              class="btn btn-light btn-lg btn-block colorButton"
+              onclick="dropdownFunction()"
+            >
               Choose a theme
             </button>
+            <div id="colorlist" class="dropdownContent">
+              <div class="row">
+                <div class="col-md-6 offset-md-3 pt-3">
+                  <a
+                    onclick="colorChange('white','darkgray','black','darkred')"
+                  >
+                    Default
+                    <div class="colorLabel" style="--labelColor: white"></div>
+                    <div
+                      class="colorLabel"
+                      style="--labelColor: darkgray"
+                    ></div>
+                    <div class="colorLabel" style="--labelColor: black"></div>
+                    <div class="colorLabel" style="--labelColor: darkred"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -99,14 +125,33 @@
             style="background-color: gray; height: 600px"
           >
             <div class="col-md-6 offset-md-3">
-              <p class="text-center lead pt-4">My Goals:</p>
+              <p class="text-center lead pt-4" style="font-size: 32px">
+                Current Goals:
+              </p>
               <p
                 class="text-center pt-3 spaced-text"
-                style="font-size: 16px; line-height: 48px"
+                style="font-size: 20px; line-height: 48px"
               >
                 Expand my knowledge and experience in an innovative technical
                 environment with a focus on computer science and mathematics,
-                more specifically machine learning.
+                more specifically
+                <a
+                  class="important"
+                  href="https://en.wikipedia.org/wiki/Machine_learning"
+                  >machine learning.</a
+                >
+              </p>
+              <p
+                class="text-center pt-3 spaced-text"
+                style="font-size: 20px; line-height: 48px"
+              >
+                After my Bachelor's I will try to obtain a
+                <a
+                  class="important"
+                  href="https://catalog.gmu.edu/colleges-schools/engineering-computing/school-computing/computer-science/computer-science-ms/#requirementstext"
+                  >Master's Degree</a
+                >
+                in CS with concentration in Machine Learning.
               </p>
             </div>
           </div>
@@ -174,11 +219,28 @@
           </div>
         </div>
         <div
-          class="container-lg pt-4 text-center"
+          class="container-lg pt-5 text-center"
           style="background-color: darkgray; height: 600px"
         >
           <div class="col-md-7 float-md-end">
             <p class="text-center lead pt-4">Experience :</p>
+          </div>
+          <div class="col-md-7 float-md-end">
+            <ul class="courses">
+              <li>
+                <a class="important" href="https://steampunk.com/"
+                  >Steampunk Inc</a
+                >
+                - Summer 2023 Technical Intern (June 2023 - August 2023)
+              </li>
+              <li>
+                <a class="important" href="https://www.caci.com/"
+                  >CACI International</a
+                >
+                - Summer 2024 Software Developer Intern (TBA)
+                <a class="important" href=""></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
