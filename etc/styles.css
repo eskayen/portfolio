@@ -8,6 +8,7 @@
 
 body {
   background-color: var(--primary-color);
+  transition:0.3s;
 }
 
 .nav-item {
@@ -17,6 +18,7 @@ body {
 }
 
 .navbar-collapse {
+  transition:0.3s;
   background-color: var(--secondary-color);
 }
 
