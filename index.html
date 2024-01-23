@@ -1,144 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width,initial-scale=1"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saad - Computer Science Student</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="etc/styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <!-- favicon and stylesheet -->
-    <link rel="icon" type="image/x-icon" href="pictures/favicon.png" />
-    <script src="etc/scripts.js"></script>
-    <!-- title -->
-    <title>Home</title>
+
+    <link rel="stylesheet" href="etc/styles.css" />
   </head>
   <body>
-    <!-- navigation panel -->
-    <div class="navbar">
-      <a href="../portfolio/" title="Home"
-        >home <i class="bi bi-house-fill"></i
-      ></a>
-      <a href="https://github.com/eskayen/portfolio" title="Link to GitHub"
-        >github repository <i class="bi bi-github"></i
-      ></a>
-      <img
-        src="pictures/greenmoonicon.png"
-        width="45px"
-        align="right"
-        alt="cool moon icon"
-        class="interestingImage"
-      />
-      <!--https://icons8.com/icons/set/moon-->
-    </div>
-    <div class="frontPage">
-      <!--heading-->
-      <center><h1>Saad - Computer Science Student</h1></center>
-      <div>
-        <!--opening-->
-        <center>
-          <p>
-            This text is
-            <a href="about.html"><span class="stylized"> stylized </span></a>
-            signaling key information or of importance. Click on them. Feel free
-            to choose a theme to your liking or comfortable to your eyes.
-          </p>
-        </center>
+    <!-- scripts -->
+    <script src="etc/scripts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 sticky-top">
+      <div class="container-fluid p-0">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="https://eskayen.github.io/portfolio/"
+                >home <i class="bi bi-house-fill"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/eskayen/portfolio"
+                >github repository <i class="bi bi-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="container-lg">
+        <p class="text-center display-4 pt-5">
+          Saad - Computer Science Student
+        </p>
+      </div>
+      <div class="container-xxlg">
+        <p class="text-center pt-3 spaced-text">
+          Currently studying for a Bachelor of science degree at
+          <a class="important" href="https://gmu.edu"
+            >George Mason University</a
+          >
+        </p>
       </div>
 
-      <!--nextpagebutton-->
-      <center>
-        <div>
-          <button class="nextpageArrow">
-            <a href="about.html" title="Click to go to the next page."
-              ><i class="bi bi-arrow-right"></i
-            ></a>
-          </button>
+      <div class="container-lg pt-6">
+        <div class="text-center">
+          <div style="height: 1000px" class="pt-5">
+            <button
+              type="button"
+              class="btn btn-light btn-lg btn-block colorButton"
+              onclick="dropdownFunction()"
+            >
+              Choose a theme
+            </button>
+            <div id="colorlist" class="dropdownContent">
+              <div class="col-md-6 offset-md-3 pt-3 row">
+                <a onclick="colorChange('white','darkgray','black','darkred')">
+                  Default
+                  <div class="colorLabel" style="--labelColor: white"></div>
+                  <div class="colorLabel" style="--labelColor: darkgray"></div>
+                  <div class="colorLabel" style="--labelColor: black"></div>
+                  <div class="colorLabel" style="--labelColor: darkred"></div>
+                </a>
+              </div>
+              <div class="col-md-6 offset-md-3 pt-3 row">
+                <a
+                  onclick="colorChange('#181818','#8758FF','#F2F2F2','#5CB8E4')"
+                >
+                  Midnight
+                  <div class="colorLabel" style="--labelColor: #181818"></div>
+                  <div class="colorLabel" style="--labelColor: #8758ff"></div>
+                  <div class="colorLabel" style="--labelColor: #f2f2f2"></div>
+                  <div class="colorLabel" style="--labelColor: #5cb8e4"></div>
+                </a>
+              </div>
+
+              <div class="col-md-6 offset-md-3 pt-3 row">
+                <a
+                  onclick="colorChange('#FFF5E4','#FFC4C4','#EE6983','#850E35')"
+                >
+                  Raspberry
+                  <div class="colorLabel" style="--labelColor: #fff5e4"></div>
+                  <div class="colorLabel" style="--labelColor: #ffc4c4"></div>
+                  <div class="colorLabel" style="--labelColor: #ee6983"></div>
+                  <div class="colorLabel" style="--labelColor: #850e35"></div>
+                </a>
+              </div>
+
+              <div class="col-md-6 offset-md-3 pt-3 row">
+                <a
+                  onClick="colorChange('#2B4865','#002B5B','#37a1c8','#8FE3CF')"
+                  >Aquamarine
+                  <div class="colorLabel" style="--labelColor: #2b4865"></div>
+                  <div class="colorLabel" style="--labelColor: #002b5b"></div>
+                  <div class="colorLabel" style="--labelColor: #37a1c8"></div>
+                  <div class="colorLabel" style="--labelColor: #8fe3cf"></div
+                ></a>
+              </div>
+
+              <div class="col-md-6 offset-md-3 pt-3 row">
+                <a
+                  onClick="colorChange('#181818','#711A75','#F10086','#F582A7')"
+                  >Miami Night
+                  <div class="colorLabel" style="--labelColor: #181818"></div>
+                  <div class="colorLabel" style="--labelColor: #711a75"></div>
+                  <div class="colorLabel" style="--labelColor: #f10086"></div>
+                  <div class="colorLabel" style="--labelColor: #f582a7"></div
+                ></a>
+              </div>
+
+              <div class="col-md-6 offset-md-3 pt-3 row">
+                <a
+                  onClick="colorChange('#F8EDE3','#DFD3C3','#be9d87','#7D6E83')"
+                  >Wafer
+                  <div class="colorLabel" style="--labelColor: #f8ede3"></div>
+                  <div class="colorLabel" style="--labelColor: #dfd3c3"></div>
+                  <div class="colorLabel" style="--labelColor: #be9d87"></div>
+                  <div class="colorLabel" style="--labelColor: #7d6e83"></div
+                ></a>
+              </div>
+
+              <div class="col-md-6 offset-md-3 pt-3 row">
+                <a
+                  onClick="colorChange('#251B37','#372948','#FFCACA','#FFECEF')"
+                  >Lavender
+                  <div class="colorLabel" style="--labelColor: #251b37"></div>
+                  <div class="colorLabel" style="--labelColor: #372948"></div>
+                  <div class="colorLabel" style="--labelColor: #ffcaca"></div>
+                  <div class="colorLabel" style="--labelColor: #ffecef"></div
+                ></a>
+              </div>
+
+              <div class="col-md-6 offset-md-3 pt-3 row">
+                <a
+                  onClick="colorChange('#26191B','#584153','#AF8BAF','#F6ACC8')"
+                  >Grape
+                  <div class="colorLabel" style="--labelColor: #26191b"></div>
+                  <div class="colorLabel" style="--labelColor: #584153"></div>
+                  <div class="colorLabel" style="--labelColor: #af8baf"></div>
+                  <div class="colorLabel" style="--labelColor: #f6acc8"></div
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </center>
+      </div>
 
-      <!--button and function call-->
-      <!-- themes -->
-      <div class="dropdown" align="center">
-        <button onclick="dropdownFunction()" class="colorButton">
-          Choose a theme
-        </button>
-        <div id="colorlist" class="dropdownContent">
-          <a onClick="colorChange('white','darkgray','black','darkred')"
-            >Default
-            <div class="colorLabel" style="--labelColor: white"></div>
-            <div class="colorLabel" style="--labelColor: darkgray"></div>
-            <div class="colorLabel" style="--labelColor: black"></div>
-            <div class="colorLabel" style="--labelColor: darkred"></div
-          ></a>
-
-          <a onClick="colorChange('#181818','#8758FF','#F2F2F2','#5CB8E4')"
-            >Midnight
-            <div class="colorLabel" style="--labelColor: #181818"></div>
-            <div class="colorLabel" style="--labelColor: #8758ff"></div>
-            <div class="colorLabel" style="--labelColor: #f2f2f2"></div>
-            <div class="colorLabel" style="--labelColor: #5cb8e4"></div
-          ></a>
-
-          <a onClick="colorChange('#FFF5E4','#FFC4C4','#EE6983','#850E35')"
-            >Raspberry
-            <div class="colorLabel" style="--labelColor: #fff5e4"></div>
-            <div class="colorLabel" style="--labelColor: #ffc4c4"></div>
-            <div class="colorLabel" style="--labelColor: #ee6983"></div>
-            <div class="colorLabel" style="--labelColor: #850e35"></div
-          ></a>
-
-          <a onClick="colorChange('#2B4865','#002B5B','#37a1c8','#8FE3CF')"
-            >Aquamarine
-            <div class="colorLabel" style="--labelColor: #2b4865"></div>
-            <div class="colorLabel" style="--labelColor: #002b5b"></div>
-            <div class="colorLabel" style="--labelColor: #37a1c8"></div>
-            <div class="colorLabel" style="--labelColor: #8fe3cf"></div
-          ></a>
-
-          <a onClick="colorChange('#181818','#711A75','#F10086','#F582A7')"
-            >Miami Night
-            <div class="colorLabel" style="--labelColor: #181818"></div>
-            <div class="colorLabel" style="--labelColor: #711a75"></div>
-            <div class="colorLabel" style="--labelColor: #f10086"></div>
-            <div class="colorLabel" style="--labelColor: #f582a7"></div
-          ></a>
-
-          <a onClick="colorChange('#232931','#393E46','#EEEEEE','#4ECCA3')"
-            >Mint
-            <div class="colorLabel" style="--labelColor: #232931"></div>
-            <div class="colorLabel" style="--labelColor: #393e46"></div>
-            <div class="colorLabel" style="--labelColor: #eeeeee"></div>
-            <div class="colorLabel" style="--labelColor: #4ecca3"></div
-          ></a>
-
-          <a onClick="colorChange('#F8EDE3','#DFD3C3','#be9d87','#7D6E83')"
-            >Wafer
-            <div class="colorLabel" style="--labelColor: #f8ede3"></div>
-            <div class="colorLabel" style="--labelColor: #dfd3c3"></div>
-            <div class="colorLabel" style="--labelColor: #be9d87"></div>
-            <div class="colorLabel" style="--labelColor: #7d6e83"></div
-          ></a>
-
-          <a onClick="colorChange('#251B37','#372948','#FFCACA','#FFECEF')"
-            >Lavender
-            <div class="colorLabel" style="--labelColor: #251b37"></div>
-            <div class="colorLabel" style="--labelColor: #372948"></div>
-            <div class="colorLabel" style="--labelColor: #ffcaca"></div>
-            <div class="colorLabel" style="--labelColor: #ffecef"></div
-          ></a>
-
-          <a onClick="colorChange('#26191B','#584153','#AF8BAF','#F6ACC8')"
-            >Grape
-            <div class="colorLabel" style="--labelColor: #26191b"></div>
-            <div class="colorLabel" style="--labelColor: #584153"></div>
-            <div class="colorLabel" style="--labelColor: #af8baf"></div>
-            <div class="colorLabel" style="--labelColor: #f6acc8"></div
-          ></a>
+      <div class="container-lg pt-6">
+        <div class="text-center">
+          <div class="container-lg pt-4 text-center" style="height: 600px">
+            <div class="col-md-6 offset-md-3">
+              <p class="text-center lead pt-4" style="font-size: 32px">
+                Current Goals:
+              </p>
+              <p
+                class="text-center pt-3 spaced-text"
+                style="font-size: 20px; line-height: 48px"
+              >
+                Expand my knowledge and experience in an innovative technical
+                environment with a focus on computer science and mathematics,
+                more specifically
+                <a
+                  class="important"
+                  href="https://en.wikipedia.org/wiki/Machine_learning"
+                  >machine learning.</a
+                >
+              </p>
+              <p
+                class="text-center pt-3 spaced-text"
+                style="font-size: 20px; line-height: 48px"
+              >
+                After my Bachelor's I will try to obtain an MS in CS with
+                concentration in Machine Learning.
+              </p>
+            </div>
+          </div>
+          <div style="height: 600px" class="pt-5">
+            <div class="col-md-6">
+              <p class="text-center lead pt-3">Relevant coursework :</p>
+              <div class="container-fluid">
+                <ul class="courses">
+                  <li>
+                    Calculus (1, 2, & 3), Linear Algebra, Physics (1, 2),
+                    Chemistry
+                  </li>
+                  <li>
+                    <a
+                      class="important"
+                      href="https://catalog.gmu.edu/courses/cs/"
+                      >CS310 </a
+                    >Data Structures
+                  </li>
+                  <li>
+                    <a
+                      class="important"
+                      href="https://catalog.gmu.edu/courses/cs/"
+                      >CS330 </a
+                    >Formal Methods and Models
+                  </li>
+                  <li>
+                    <a
+                      class="important"
+                      href="https://catalog.gmu.edu/courses/cs/"
+                      >CS367 </a
+                    >Computer Systems and Programming
+                  </li>
+                  <li>
+                    <a
+                      class="important"
+                      href="https://cehd.gmu.edu/courses/MATH-442/"
+                      >OR442 </a
+                    >Stochastic Operations Research
+                  </li>
+                  <li>
+                    <a
+                      class="important"
+                      href="https://catalog.gmu.edu/courses/cs/"
+                      >CS450 </a
+                    >Database Concepts
+                  </li>
+                  <li>
+                    <a
+                      class="important"
+                      href="https://catalog.gmu.edu/courses/cs/"
+                      >CS471 </a
+                    >Operating Systems
+                  </li>
+                  <li>
+                    <a
+                      class="important"
+                      href="https://catalog.gmu.edu/courses/cs/"
+                      >CS475 </a
+                    >Concurrent and Distributed Systems
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-lg pt-5 text-center" style="height: 600px">
+          <div class="col-md-7 float-md-end">
+            <p class="text-center lead pt-4">Experience :</p>
+          </div>
+          <div class="col-md-7 float-md-end">
+            <ul class="courses">
+              <li>
+                <a class="important" href="https://steampunk.com/"
+                  >Steampunk Inc</a
+                >
+                - Summer 2023 Technical Intern (June 2023 - August 2023)
+              </li>
+              <li>
+                <a class="important" href="https://www.caci.com/"
+                  >CACI International</a
+                >
+                - Summer 2024 Software Developer Intern (TBA)
+                <a class="important" href=""></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

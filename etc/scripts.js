@@ -1,53 +1,62 @@
-// JavaScript Document
+var root = document.querySelector(":root");
 
-var root = document.querySelector(':root');
-
-function colorChange(primary, secondary, text, accent){
-	localStorage.setItem('--primarycolor',primary);
-	localStorage.setItem('--secondarycolor',secondary);
-	localStorage.setItem('--text',text);
-	localStorage.setItem('--accent',accent);
-	root.style.setProperty('--primarycolor',primary);
-	root.style.setProperty('--secondarycolor',secondary);								
-	root.style.setProperty('--text',text);													// change css colors and change localstorage variables
-	root.style.setProperty('--accent',accent);
+// change css colors and change localstorage variables
+function colorChange(primary, secondary, text, accent) {
+  console.log("Changing colors.");
+  localStorage.setItem("--primary-color", primary);
+  localStorage.setItem("--secondary-color", secondary);
+  localStorage.setItem("--text", text);
+  localStorage.setItem("--accent", accent);
+  root.style.setProperty("--primary-color", primary);
+  root.style.setProperty("--secondary-color", secondary);
+  root.style.setProperty("--text", text);
+  root.style.setProperty("--accent", accent);
 }
 
-function dropdownFunction(){
-	document.getElementById("colorlist").classList.toggle("show");						// dropdown function opens list
+function obtainColors() {
+  //obtain local colors and log
+  if (localStorage.getItem("--primary-color")) {
+    colorChange(
+      localStorage.getItem("--primary-color"),
+      localStorage.getItem("--secondary-color"),
+      localStorage.getItem("--text"),
+      localStorage.getItem("--accent")
+    );
+
+    console.log("Colors found. Loading.");
+  }
+  //set to default colors
+  else {
+    console.log("Colors not found.");
+    colorChange("white", "darkgray", "black", "darkred");
+  }
 }
 
-function obtainColors(){
-	if(localStorage.getItem('--primarycolor')){
-		colorChange(localStorage.getItem('--primarycolor'),localStorage.getItem('--secondarycolor'),localStorage.getItem('--text'),localStorage.getItem('--accent'));		
-		//obtain local colors and log
-		console.log("Colors found. Loading.");
-	}
-	else{
-		console.log("Colors not found.");
-		colorChange('white','darkgray','black','darkred');					//set to default colors
-	}
+// dropdown function opens list
+function dropdownFunction() {
+  console.log("Clicked button.");
+  var x = document.getElementById("colorlist");
+
+  if(x.style.display == "none"){
+    x.style.display = "block";
+  }else{
+    x.style.display = "none";
+  }
 }
 
-function copyDiscord(){
-	var copiedText = ("MEN4CE#9134");
-	navigator.clipboard.writeText(copiedText);
-	console.log("Copied Discord tag to clipboard.")
-	alert("Copied to clipboard!");
-}
-
-
+//actually obtain the colors
 obtainColors();
 
-window.onclick = function(event) {
-  if (!event.target.matches('.colorButton')) {
-    var amount = document.getElementsByClassName("dropdownContent");						// close list if user clicks outside
+// close list if user clicks outside
+window.onclick = function (event) {
+  if (!event.target.matches(".colorButton")) {
+    var amount = document.getElementsByClassName("dropdownContent");
     var i;
     for (i = 0; i < amount.length; i++) {
       var open = amount[i];
-      if (open.classList.contains('show')) {
-        open.classList.remove('show');
+      if (open.classList.contains("show")) {
+        open.classList.remove("show");
       }
     }
   }
-}
+};
