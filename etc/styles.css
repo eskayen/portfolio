@@ -6,16 +6,15 @@
   --text: black;
 }
 
-#nav {
-  background-color: var(--secondary-color);
-}
 .nav-item {
-  font-size: larger;
+  font-size: 20px;
   transition: 0.25s;
   background-color: var(--secondary-color);
 }
 
-
+.navbar-collapse {
+  background-color: var(--secondary-color);
+}
 
 .nav-item:hover {
   transition: 0.25s;
@@ -64,12 +63,16 @@
   background-color: var(--secondary-color);
 }
 
-.gmu-text {
-  letter-spacing: 5px;
+.spaced-text {
+  letter-spacing: 3px;
 }
 
 .lead {
   font-family: sans-serif;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: var(--accent);
+  font-size: 25px;
 }
 
 .important {
@@ -82,4 +85,16 @@
   color: var(--accent);
   font-weight: bold;
   cursor: pointer;
+}
+
+.courses {
+  font-family: sans-serif;
+  color: var(--text);
+  letter-spacing: 2px;
+  list-style: none;
+  text-align: center;
+}
+
+.courses li {
+  padding-top: 24px;
 }
