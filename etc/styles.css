@@ -6,6 +6,10 @@
   --text: black;
 }
 
+body {
+  background-color: var(--primary-color);
+}
+
 .nav-item {
   font-size: 20px;
   transition: 0.25s;
@@ -35,8 +39,7 @@
   font-weight: bold;
 }
 
-
-.colorButton{
+.colorButton {
   color: var(--accent);
   outline-color: var(--accent);
   margin-bottom: 2px;
@@ -67,6 +70,7 @@
 
 .spaced-text {
   letter-spacing: 3px;
+  color: var(--text);
 }
 
 .lead {
@@ -101,19 +105,35 @@
   padding-top: 24px;
 }
 
-.color-text {
+.colorLabel {
+  display: inline-block;
+  width: 40px;
+  margin-left: 8px;
+  height: 20px;
+  border-radius: 25px;
+  border: solid;
+  transition: 0.3s;
+  border-width: 1px;
+  border-color: var(--text);
+  background-color: var(--labelColor);
+}
+
+.dropdownContent {
+  display: none;
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: var(--text);
   font-family: sans-serif;
   font-weight: bold;
 }
 
-.colorLabel{
-	display: inline-block;
-	width:40px;
-	margin-left:8px;
-	height:20px;
-	border-radius: 25px;
-	border:solid;
-	border-width: 1px;
-	border-color: var(--text);
-	background-color:var(--labelColor);		
+.dropdownContent a {
+  color: var(--accent);
+  transition: 0.3s;
+}
+
+.dropdownContent a:hover {
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+  cursor: pointer;
 }

@@ -2,6 +2,7 @@ var root = document.querySelector(":root");
 
 // change css colors and change localstorage variables
 function colorChange(primary, secondary, text, accent) {
+  console.log("Changing colors.");
   localStorage.setItem("--primary-color", primary);
   localStorage.setItem("--secondary-color", secondary);
   localStorage.setItem("--text", text);
@@ -33,7 +34,14 @@ function obtainColors() {
 
 // dropdown function opens list
 function dropdownFunction() {
-  document.getElementById("colorlist").classList.toggle("show");
+  console.log("Clicked button.");
+  var x = document.getElementById("colorlist");
+
+  if(x.style.display == "none"){
+    x.style.display = "block";
+  }else{
+    x.style.display = "none";
+  }
 }
 
 //actually obtain the colors
